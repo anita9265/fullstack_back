@@ -89,4 +89,9 @@ function onListening() {
   debug('Listening on ' + bind);
     console.log('Server running on ' + bind);
 
+   
+  console.log(` Server is running on http://localhost:${addr.port}`);
+ 
+
+
 }

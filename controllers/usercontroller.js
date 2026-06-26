@@ -142,10 +142,10 @@ const pagby_page = async (req, res) => {
 // regiter-login-logout
 const register = async (req, res) => {
   try {
-    const { name, email, password, role } = req.body;
+    const {name, email, password, role } = req.body;
 
     // Check existing user
-    const existing = await prisma.user.findUnique({
+    const existing = await prisma.User.findUnique({
       where: { email }
     });
 
