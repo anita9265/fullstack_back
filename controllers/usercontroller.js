@@ -220,7 +220,7 @@ console.log("JWT_SECRET =", process.env.JWT_SECRET);
         email: user.email,
         role: user.role
       },
-    process.env.SECRET_KEY,
+    process.env.JWT_SECRET,
       { expiresIn: "1h" }
     );
 

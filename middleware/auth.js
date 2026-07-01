@@ -20,7 +20,7 @@ const verifyToken = (req, res, next) => {
 
         const decoded = jwt.verify(
             token,
-             process.env.SECRET_KEY
+             process.env.JWT_SECRET
         );
 
         req.user = decoded;
