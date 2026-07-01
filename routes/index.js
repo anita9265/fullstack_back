@@ -6,6 +6,7 @@ const role=require('../middleware/role')
 
 // crud
 
+
 router.get('/register',usercontroller.getusers);
 // router.get('/get/:id',usercontroller.getUserById);
 // router.post('/insert',usercontroller.createUser);
